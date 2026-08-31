@@ -70,7 +70,7 @@ def research_prospect(name, company, linkedin_url):
         "contents": [{"parts": [{"text": prompt}]}],
         "tools": [{"google_search": {}}],
     }
-    for attempt in range(5):
+    for attempt in range(2):
         try:
             r = requests.post(URL, json=payload, timeout=60)
         except requests.RequestException:
