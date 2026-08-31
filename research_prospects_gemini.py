@@ -22,7 +22,7 @@ import csv
 import requests
 
 API_KEY = os.environ.get("GEMINI_API_KEY", "")
-MODEL = "gemini-flash-latest"  # verificar nombre vigente; alternativa: gemini-2.5-flash
+MODEL = "gemini-2.5-flash"  # verificar nombre vigente; alternativa: gemini-2.5-flash
 URL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={API_KEY}"
 
 PROMPT_TEMPLATE = """
